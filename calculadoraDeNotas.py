@@ -15,3 +15,4 @@ def calculo(nota, media, students):
 
 
 calculo(nota, media, students)
+
