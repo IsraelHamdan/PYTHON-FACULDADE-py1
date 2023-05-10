@@ -1,6 +1,5 @@
 numero = int(input("quantos elementos verificar? "))
 
-
 def eh_primo(n):
     if n < 2:
         return False
