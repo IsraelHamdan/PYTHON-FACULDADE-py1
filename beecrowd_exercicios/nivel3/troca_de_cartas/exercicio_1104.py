@@ -1,25 +1,16 @@
-def entrada():
-    a = [int(i) for i in input().split()]
-    b = [int(j) for j in input().split()]
-
-    return a, b
-
-def no_repeat(alice, bea):
-   alice = set(alice)
-   bea = set(bea)
-
-   diff_A_B = alice.difference(bea)
-   diff_B_A = bea.difference(alice)
-   
-   troca = min(len(diff_A_B), len(diff_B_A))
-
-   print(troca)
-
 while True:
-    inputA, inputB = map(int, input().split())
+    a, b =  input().split()
 
-    if inputA and inputB == 0:
+    if a and b == '0':
         break
+
+    alice = set(list(map(int, input().split())))
     
-    alice, bea = entrada()
-    no_repeat(alice, bea)
+    beatriz = set(list(map(int, input().split())))
+ 
+    diffA_B = alice.difference(beatriz)
+    diffB_A = beatriz.difference(alice)
+
+    troca = min(len(diffA_B), len(diffB_A))
+
+    print(troca)
