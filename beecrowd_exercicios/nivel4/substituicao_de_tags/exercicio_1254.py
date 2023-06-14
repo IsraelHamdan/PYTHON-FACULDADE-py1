@@ -1,8 +1,6 @@
 while True:
     try:
-        tag = input()
-        numero = input()
-        frase = input()
+        tag, numero, frase = input(), input(), input()
 
         frase_modificada = ''
         dentro = False
